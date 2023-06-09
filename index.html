@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;
+      margin-top: 30px;
+      
+    }
+    .attribution a { color: hsl(228, 45%, 44%); 
+    font-size: 18px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <script src="Cal.js"></script>
+</head>
+<body id="corpo">
+  <main>
+    <div class="cabeçario" id="cabeçario">
+      <p class="calc" id="calc">calc</p>
+      <div class="painel" id="painel">
+          <p class="theme" id="theme">THEME</p>
+      </div>
+      <div class="botoes">
+        <div class="temas" id="temas">
+          <p class="mar" id="mar1">1</p>
+          <p class="mar" id="mar2">2</p>
+          <p class="mar" id="mar3">3</p>
+        </div>
+        <div class="tema-on" id="tema">
+          <button class="on" id="on" onclick="tema2()"></button>
+        </div>
+      </div>
+    </div>
+      <div class="display" id="display">
+        <input type="text" class="tela" id="tela"  >
+      </div>
+      <div class="teclas" id="teclas">
+        <button class="aritimetica7" id="aritimetica7" onclick="enviarParaTela('7')">7</button>
+        <button class="aritimetica8-9" id="aritimetica8" onclick="enviarParaTela('8')">8</button>
+        <button class="aritimetica8-9" id="aritimetica9" onclick="enviarParaTela('9')">9</button>
+        <button class="apagar-d" id="apagar-d" onclick="deletar()">DEL</button>
+        <button class="aritimetica4-1" id="aritimetica4" onclick="enviarParaTela('4')">4</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica5" onclick="enviarParaTela('5')">5</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica6" onclick="enviarParaTela('6')">6</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica+" onclick="enviarParaTela('+')">+</button>
+        <button class="aritimetica4-1" id="aritimetica1" onclick="enviarParaTela('1')">1</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica2" onclick="enviarParaTela('2')">2</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica3" onclick="enviarParaTela('3')">3</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica-" onclick="enviarParaTela('-')">-</button>
+        <button class="aritimetica4-1" id="aritimetica." onclick="enviarParaTela(',')">.</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica0" onclick="enviarParaTela('0')">0</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica/" onclick="enviarParaTela('/')">/</button>
+        <button class="aritimeticaSemelhantes" id="aritimetica*" onclick="enviarParaTela('*')">*</button>
+        <button class="reset" id="reset" onclick="resetar()">RESET</button>
+        <button class="igual" id="igual" onclick="Calcular()">=</button>
+      </div>
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Junior Pereira Ribeiro</a>.
+      </div>-->
+  </main>
+
+
+  
+   
+</body>
+</html>
